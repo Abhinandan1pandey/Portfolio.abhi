@@ -26,7 +26,7 @@ export default function Resume() {
           <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto relative z-10">
             {/* View CV Button */}
             <a 
-              href="/resume.pdf" 
+              href="./resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="magnetic flex items-center justify-center gap-3 px-8 py-4 bg-white/5 border border-white/20 text-white font-bold rounded-xl hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] w-full sm:w-auto"
@@ -37,7 +37,7 @@ export default function Resume() {
 
             {/* Download CV Button */}
             <a 
-              href="/resume.pdf" 
+              href="./resume.pdf" 
               download="Abhinandan_Pandey_Resume.pdf"
               className="magnetic flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-xl hover:from-blue-500 hover:to-purple-500 transition-all duration-300 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)] hover:-translate-y-1 w-full sm:w-auto"
             >

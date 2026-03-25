@@ -92,9 +92,9 @@ export default function Experience() {
                   transition={{ delay: idx * 0.1 }}
                 >
                   <a 
-                    href={cert.link}
-                    target={cert.link !== "#" ? "_blank" : "_self"}
-                    rel={cert.link !== "#" ? "noopener noreferrer" : ""}
+                    href={cert.link !== "#" ? cert.link : (cert.image.startsWith('/') ? `.${cert.image}` : `./${cert.image}`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="glass-card p-0 h-full flex flex-col border border-white/5 hover:border-white/20 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(0,255,255,0.15)] transition-all duration-300 group bg-dark/50 block overflow-hidden"
                   >
                     {/* Certificate Image Cover */}
