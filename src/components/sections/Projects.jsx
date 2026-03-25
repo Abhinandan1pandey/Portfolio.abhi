@@ -73,7 +73,7 @@ export default function Projects() {
                 
                 {/* Project Image Cover (Top) */}
                 <div className="relative w-full h-[40%] flex-shrink-0 overflow-hidden pointer-events-none" style={{ transform: "translateZ(10px)" }}>
-                  <img src={project.image} alt={project.title} className="w-full h-full object-cover opacity-90" />
+                  <img src={`${import.meta.env.BASE_URL}${project.image.startsWith('/') ? project.image.slice(1) : project.image}`} alt={project.title} className="w-full h-full object-cover opacity-90" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0f111a] via-[#0f111a]/40 to-transparent pointer-events-none" />
                   <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
                     <span className="text-xs font-bold tracking-wider uppercase text-gray-300">{project.category}</span>

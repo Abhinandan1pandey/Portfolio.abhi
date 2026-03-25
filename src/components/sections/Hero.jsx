@@ -27,7 +27,7 @@ export default function Hero() {
           className="mb-6 relative group z-20 pointer-events-auto"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-neon-purple rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <img src="/profile.jpg" alt="Abhinandan Pandey" className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-[6px] border-[#0B0C10] shadow-[0_0_40px_rgba(155,81,224,0.4)]" />
+          <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Abhinandan Pandey" className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-[6px] border-[#0B0C10] shadow-[0_0_40px_rgba(155,81,224,0.4)]" />
         </motion.div>
 
         <motion.p

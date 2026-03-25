@@ -99,7 +99,7 @@ export default function Experience() {
                   >
                     {/* Certificate Image Cover */}
                     <div className="w-full h-40 bg-white/5 relative overflow-hidden flex-shrink-0">
-                       <img src={cert.image} alt={cert.title} className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                       <img src={`${import.meta.env.BASE_URL}${cert.image.startsWith('/') ? cert.image.slice(1) : cert.image}`} alt={cert.title} className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
                        <div className="absolute inset-0 bg-gradient-to-t from-[#0f111a]/90 to-transparent pointer-events-none"></div>
                        {cert.link !== "#" && <ExternalLink size={16} className="absolute top-4 right-4 text-white drop-shadow-md group-hover:text-neon-cyan transition-colors z-10" />}
                     </div>
